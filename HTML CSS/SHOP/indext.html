@@ -83,9 +83,25 @@
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link"><i class="fa fa-question" aria-hidden="true"></i>Trợ giúp</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://bom.to/M0FhzpOQEISeF" alt="" class="header__navbar-image">
+                            <span class="header__navbar-name">Nguyên Văn Hiếu</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng suất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
+
                 </nav>
                 <!-- Header with seach -->
                 <div class="header--with-search">
@@ -98,16 +114,378 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="header__search"></div>
-                    <div class="header__cart"><i class="fas fa-shopping-cart header__cart-icon "></i></div>
+                    <div class="header__search">
+                        <div class="header__search-search-wrap">
+                            <input type="text" class="header__search-search" placeholder="Tìm kiếm ....">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem trộn</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-labal">Trong shop</span>
+                            <i class="header__search-labal-icon fas fa-angle-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span class="header__search-item-labal">Trong shop </span>
+                                    <i class="header__search-item-icon fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span class="header__search-item-labal">Ngoài shop </span>
+                                    <i class="header__search-item-icon fas fa-check"></i>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="fas fa-shopping-cart header__cart-icon "></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-no_cart -->
+                            <div class="header__cart-list ">
+                                <img src="http://demo.shop.tickid.vn/assets/images/no-cart.png" alt="" class="header__cart-no_cart-img">
+                                <p class="header__cart-no_cart-msg">Chưa có sản phẩm</p>
+                                <!-- Cart -->
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se Khít Lỗ Chân Lông Sum37 Water-full Set 5p</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cấp Nước Se</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.800.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-amount">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">Phân loại hàng: </span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <button class="header__cart-view-cart btn btn-primary ">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
                 </div>
             </div>
+    </div>
 
-        </header>
-        <div class="container">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+    </header>
+    <div class="app__container">
+        <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category-heading"><i class="category__heading-icon fas fa-bars "></i> Danh mục </h3>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Thực phẩm chức năng</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Dịch vụ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="grid__column-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filer__btn btn">Phổ biến</button>
+                        <button class="home-filer__btn btn btn-primary">Mới nhất </button>
+                        <button class="home-filer__btn btn">Bán chạy</button>
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="select-input__icon fas fa-angle-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá từ thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá từ cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/14
+                            </span>
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-control-btn home-filter__page-control--disable">
+                                    <i class="home-filter__page-control__icon fas fa-chevron-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-control-btn">
+                                    <i class="home-filter__page-control__icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1610780786-myphamohui-lgvina.png);"></div>
+                                    <h4 class="home-product-item__name">Kem Dưỡng Vùng Mắt Sum37 Secret Programming Eye Cream</h4>
+                                    <div class="home-product-item__product">
+                                        <span class="home-product-item__product-old">2.100.000đ</span>
+                                        <span class="home-product-item__product-current">1.170.000đ</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like">
+                                        <i class="far fa-heart"></i>
+                                        <!-- <i class="fas fa-heart"></i> -->
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__rating-gold fas fa-star"></i>
+                                            <i class="home-product-item__rating-gold fas fa-star"></i>
+                                            <i class="home-product-item__rating-gold fas fa-star"></i>
+                                            <i class="home-product-item__rating-gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="home-product-item__sold">100 đã bán</div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">whoo</span>
+                                        <span class="home-product-item__origin-name">Nhật Bản</span>
+
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i> <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <sapn class="home-product-item__sale-off-percent">10%</sapn>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination-item pagination-item--active ">
+                            <a href="" class="pagination-item__link "> 1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link"> 2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link"> 3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link"> 14</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-        <div class="footer"></div>
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hưỡng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách vận chuyển</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Về chúng tôi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới thiệu về Mỹ phẩm Ohui-LG Vina</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách thanh toán</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều khoản chính sách</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4"></div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                    <a href="" class="footer-item__link">
+                        <i class="footer-item__link-icon fab fa-facebook"></i>
+                        <span class="footer-link__label">Facebook</span>
+                    </a>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">VÀO CỬA HÀNG TRÊN ỨNG DỤNG MỸ PHẨM OHUI - LG VINA</h3>
+                    <div class="footer__download">
+                        <img src="https://img.tickid.vn/photos/qrcode_base64/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ" alt="" class="footer__download-qr">
+                        <div class="footer__app">
+                            <img src="http://demo.shop.tickid.vn/assets/images/icons/02b83d7c975e2830effa5fdf2045095c.png" alt="" class="footer__app-icon">
+                            <img src="http://demo.shop.tickid.vn/assets/images/icons/f014ef6b544459bf2463167d3226851f.png" alt="" class="footer__app-icon">
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid">
+                <p class="footer-text">@ 2021 - Bản quyền về công ty Mycv</p>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <!-- <div class="modal">
         <div class="modal__overlay"></div>

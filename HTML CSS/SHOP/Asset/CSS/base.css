@@ -29,6 +29,29 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+/* Test  */
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.334%;
 }
 
 
@@ -87,7 +110,7 @@ html {
 
 .btn {
     text-decoration: none;
-    min-width: 146px;
+    min-width: 124px;
     height: 36px;
     border: none;
     border-radius: 2px;
@@ -96,7 +119,7 @@ html {
     outline: none;
     cursor: pointer;
     background-color: var(--white-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -134,3 +157,89 @@ html {
     background-color: var(--white-color);
     color: #666;
 }
+
+
+/* Select */
+
+.select-input {
+    min-width: 171px;
+    height: 34px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 12px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__icon {
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 12px;
+    list-style: none;
+    display: none;
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-iten {}
+
+.pagination-item--active .pagination-item__link {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #e96f48;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    color: #939393;
+    font-size: 2rem;
+    font-weight: 300;
+    min-width: 40px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 6px;
+}
+
+.pagination-item__icon {}
